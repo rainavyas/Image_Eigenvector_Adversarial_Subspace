@@ -1,4 +1,4 @@
-# Is there a subspace to describe all adversarial perturbation
+# Is there a subspace to describe all adversarial perturbations
 
 This work explores a subspace defined by the eigenvectors of the input data covariance matrix to characterise individual and universal adversarial
 perturbations on image classifiers.
