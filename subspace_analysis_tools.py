@@ -175,3 +175,13 @@ def get_r_kl_e(trained_model, e, v, stepsize=40, epsilon=0.01, chn=3, IMG_DIM=32
         eigenvalues.append(curr_e)
         kls.append(kl)
     return ranks, kls, eigenvalues
+
+def get_area_non_overlap(cum1, cum2):
+    '''
+    Area non-overlap for cumulative plots
+    '''
+    total = 0
+    for c1, c2 in zip(cum1, cum2):
+        diff = abs(c2-c1)
+        total += diff
+    return total
